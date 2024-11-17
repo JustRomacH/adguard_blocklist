@@ -2,9 +2,13 @@ import requests
 
 # Ссылки на фильтры
 urls = [
-    "https://adguardteam.github.io/HostlistsRegistry/assets/filter_27.txt",
-    "https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt",
-    "https://adguardteam.github.io/HostlistsRegistry/assets/filter_49.txt"
+    "https://adguardteam.github.io/HostlistsRegistry/assets/filter_27.txt",  # Filter 27
+    "https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt",     # AdGuard SDNS Filter
+    "https://adguardteam.github.io/HostlistsRegistry/assets/filter_49.txt",  # Filter 49
+    "https://adguardteam.github.io/HostlistsRegistry/assets/filter_33.txt",
+    "https://adguardteam.github.io/HostlistsRegistry/assets/filter_24.txt",
+    "https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt",
+    "https://adguardteam.github.io/HostlistsRegistry/assets/filter_53.txt"
 ]
 
 # Итоговый файл
