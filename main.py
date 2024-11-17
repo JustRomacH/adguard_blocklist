@@ -16,14 +16,13 @@ unique_rules = set()
 for url in urls:
     try:
         # Скачиваем файл
-        response = requests.get(url)
-        response.raise_for_status()  # Проверка на ошибки
+        response = requests.get(url)  # Проверка на ошибки
         print(f"Загружен: {url}")
 
         # Обрабатываем строки
         for line in response.text.splitlines():
             stripped_line = line.strip()
-            if stripped_line and not stripped_line.startswith("!"):  # Убираем пустые строки и комментарии
+            if stripped_line and not stripped_line.startswith("!") and not stripped_line.startswith("#"):  # Убираем пустые строки и комментарии
                 unique_rules.add(stripped_line)
 
     except requests.RequestException as e:
