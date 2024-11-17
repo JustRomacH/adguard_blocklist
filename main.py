@@ -2,17 +2,13 @@ import requests
 
 # Ссылки на фильтры
 urls = [
-    "https://adguardteam.github.io/HostlistsRegistry/assets/filter_27.txt",  # Filter 27
-    "https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt",     # AdGuard SDNS Filter
-    "https://adguardteam.github.io/HostlistsRegistry/assets/filter_49.txt",  # Filter 49
-    "https://adguardteam.github.io/HostlistsRegistry/assets/filter_33.txt",
-    "https://adguardteam.github.io/HostlistsRegistry/assets/filter_24.txt",
-    "https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt",
-    "https://adguardteam.github.io/HostlistsRegistry/assets/filter_53.txt"
+    "https://raw.githubusercontent.com/hl2guide/AdGuard-Home-Whitelist/main/whitelist.txt",
+    "https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt"# Simple DNS Filtering Whitelist
 ]
 
+
 # Итоговый файл
-output_file = "combined_filter.txt"
+output_file = "combined_whitelist.txt"
 
 # Уникальные правила
 unique_rules = set()
@@ -21,6 +17,7 @@ for url in urls:
     try:
         # Скачиваем файл
         response = requests.get(url)  # Проверка на ошибки
+        if response.status_code != 200: continue
         print(f"Загружен: {url}")
 
         # Обрабатываем строки
