@@ -2,13 +2,21 @@ import requests
 
 # Ссылки на фильтры
 urls = [
-    "https://raw.githubusercontent.com/hl2guide/AdGuard-Home-Whitelist/main/whitelist.txt",
-    "https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt"# Simple DNS Filtering Whitelist
+    "https://adguardteam.github.io/HostlistsRegistry/assets/filter_45.txt",
+    "https://adguardteam.github.io/HostlistsRegistry/assets/filter_33.txt",
+    "https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt",
+    "https://adguardteam.github.io/HostlistsRegistry/assets/filter_27.txt",
+    "https://adguardteam.github.io/HostlistsRegistry/assets/filter_49.txt",
+    "https://adguardteam.github.io/HostlistsRegistry/assets/filter_4.txt",
+    "https://adguardteam.github.io/HostlistsRegistry/assets/filter_53.txt",
+    "https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt",
+    "https://adguardteam.github.io/HostlistsRegistry/assets/filter_38.txt",
+    "https://adguardteam.github.io/HostlistsRegistry/assets/filter_24.txt"
 ]
 
 
 # Итоговый файл
-output_file = "combined_whitelist.txt"
+output_file = "combined_filter.txt"
 
 # Уникальные правила
 unique_rules = set()
