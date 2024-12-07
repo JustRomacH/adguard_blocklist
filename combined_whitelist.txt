@@ -6277,6 +6277,7 @@
 @@||www.partner-ads.com^
 @@||x.bestcheck.de^
 @@||xg4ken.com^
+@@||revanced.net^$important
 akamaihd.net
 akamaitechnologies.com
 akamaized.net
